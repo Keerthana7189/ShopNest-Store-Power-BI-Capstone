@@ -76,11 +76,6 @@ Total Products Sold = SUM(order_items[Order Item ID])
 7. *Seasonal Sales Patterns*  
 8. *Revenue Analysis*
 
-### Download Files 
-Download the Power BI project and datasets here: [Click Here](https://drive.google.com/file/d/1_iba52eU9b1MtPZRv6yLBlo10Y4lSqPN/view?usp=sharing)
-
-
-
 
 
 
