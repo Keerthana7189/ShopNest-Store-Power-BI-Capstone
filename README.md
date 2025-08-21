@@ -35,10 +35,35 @@ The focus is on sales performance, order delays, payment methods, product rating
 ### Step 3: Data Analysis & Visualization
 - Created DAX measures for revenue and sales:
 ```DAX
-Total Sales = SUM(sales[OrderQuantity] * sales[ProductPrice])
-Average Sales per Customer = AVERAGE(sales[OrderQuantity] * sales[ProductPrice])
-Delayed Orders = CALCULATE(COUNTROWS(sales), sales[DeliveryStatus] = "Delayed")
-OnTime Orders = CALCULATE(COUNTROWS(sales), sales[DeliveryStatus] = "On-Time")
+-- Total Sales
+Total Sales = SUM(order_items[Price])
+
+-- Total Freight
+Total Freight = SUM(order_items[Freight Value])
+
+-- Average Order Value
+Average Order Value = AVERAGE(order_items[Price])
+
+-- Total Orders
+Total Orders = DISTINCTCOUNT(orders[Order ID])
+
+-- Delayed Orders
+Delayed Orders = 
+CALCULATE(
+    COUNTROWS(orders),
+    orders[Order Status] = "delivered late")
+
+-- On-Time Orders
+OnTime Orders = 
+CALCULATE(
+    COUNTROWS(orders),
+    orders[Order Status] = "delivered on time")
+
+-- Total Customers
+Total Customers = DISTINCTCOUNT(customers[Customer ID])
+
+-- Total Products Sold
+Total Products Sold = SUM(order_items[Order Item ID])
 ```
 
 #### *Analysis Performed:*
