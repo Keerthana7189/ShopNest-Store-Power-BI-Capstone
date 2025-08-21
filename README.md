@@ -23,9 +23,6 @@ The focus is on sales performance, order delays, payment methods, product rating
 
 ### Step 2: Data Cleaning & Transformation
 - Removed duplicates and handled missing values.
-- Created relationships:
-  ### Step 2: Data Cleaning & Transformation
-- Removed duplicates and handled missing values.
 - Created relationships between tables in the Model view:
   - CustomerID → orders
   - Customer ZIP Code → geolocation
