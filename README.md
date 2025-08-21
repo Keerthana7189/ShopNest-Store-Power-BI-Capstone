@@ -6,10 +6,15 @@ This Power BI project analyzes sales, customer, product, and territory datasets 
 The focus is on sales performance, order delays, payment methods, product ratings, and seasonal trends.
 
 *Datasets Used:*
-- sales.csv
-- customer.csv
-- product.csv
-- territory.csv
+- Customer.csv  
+- Geolocation.csv  
+- Orders.csv  
+- Order_Items.csv  
+- Order_Payment.csv  
+- Order_Reviews.csv  
+- Products.csv  
+- Seller.csv  
+- Product_Category.csv
 
 ## Steps Followed
 
