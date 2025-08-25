@@ -1,4 +1,4 @@
-# ShopNest-Store-Power-BI-Capstone
+# Power-BI Capstone Project
 
 
 ## Project Overview
